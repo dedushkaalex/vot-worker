@@ -1,5 +1,5 @@
 import { s3Urls, yandexUserAgent, corsHeaders } from "./config.js";
-const repeatableHeaders = ["date", ...Object.keys(corsHeaders)];
+const repeatableHeaders = ["date"];
 
 async function makeRequest(ctx, url, options) {
   const response = await fetch(url, options);
